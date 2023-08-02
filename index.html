@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      var number=Math.floor(Math.random()*10)
+      var isEven = !!(number % 2 == 0)
+      console.log(number,isEven)
+      if(isEven){
+        document.title="偶数"
+        document.querySelector("link[rel*='icon']").href = "/vite.svg";
+      }
+      else{
+        document.title="奇数"
+        document.querySelector("link[rel*='icon']").href = "/favicons/favicon.rc_us.ico";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
