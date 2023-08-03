@@ -9,17 +9,18 @@
       var isEven = !!(number % 2 == 0)
       console.log(number,isEven)
       if(isEven){
-        document.title="偶数"
-        document.querySelector("link[rel*='icon']").href = "/vite.svg";
+        document.title="Ringcentral Video"
+        document.querySelector("link[rel*='icon']").href = "https://v.ringcentral.com/static/favicon.rc_us.ico";
       }
       else{
-        document.title="奇数"
-        document.querySelector("link[rel*='icon']").href = "/favicons/favicon.rc_us.ico";
+        document.title="Vodafone"
+        document.querySelector("link[rel*='icon']").href = "https://brand-assets.ringcentral.com/281715cafa675bf359ebaa42cb44fa17/files/c7ebbd6e-a964-421c-b114-e48dc6937b5e/v_favicon.png";
       }
     </script>
   </head>
   <body>
-    <div id="root"></div>
-    
+    <div id="root">
+      Reset favicon and title dynamically.
+    </div>
   </body>
 </html>
