@@ -9,6 +9,7 @@ function App() {
                 routes={[
                     { path: '/getUserMedia', text: 'getUserMedia' },
                     { path: '/screenSharing', text: 'screenSharing' },
+                    { path: '/peerConnection', text: 'peerConnection' },
                 ]}
             ></NavBar>
             <div className="main">

@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom';
 
 const GetUserMedia = lazy(() => import('@/pages/get-user-media'));
 const ScreenSharing = lazy(() => import('@/pages/screen-sharing'));
+const PeerConnection = lazy(() => import('@/pages/peer-connection'));
 
 function LazyRoute({ children }: React.PropsWithChildren) {
     return <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>;
@@ -23,6 +24,14 @@ function Routes() {
             element: (
                 <LazyRoute>
                     <ScreenSharing />
+                </LazyRoute>
+            ),
+        },
+        {
+            path: '/peerConnection',
+            element: (
+                <LazyRoute>
+                    <PeerConnection />
                 </LazyRoute>
             ),
         },
